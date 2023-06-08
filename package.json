@@ -19,12 +19,12 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vitest": "^0.31.4"
   },
   "dependencies": {
-    "object-hash": "^3.0.0"
+    "object-hash": "^3.0.0",
+    "ts-node": "^10.9.1"
   }
 }

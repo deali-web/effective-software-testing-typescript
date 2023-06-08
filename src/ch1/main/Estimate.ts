@@ -5,12 +5,12 @@ export interface IEstimate {
 	getEstimate: () => number;
 	toString: () => string;
 	equals: (o: unknown) => boolean;
-	hashCode: () => number;
+	hashCode: () => any;
 }
 
-export const Estimate = (): IEstimate => {
-	const developer = '';
-	const estimate = 0;
+export const Estimate = (d?: string, e?: number): IEstimate => {
+	const developer = d || '';
+	const estimate = e || 0;
 
 	const getDeveloper = () => {
 		return developer;
