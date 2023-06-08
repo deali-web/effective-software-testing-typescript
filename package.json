@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/node": "^18.16.16",
@@ -24,6 +25,7 @@
     "vitest": "^0.31.4"
   },
   "dependencies": {
+    "@vitest/coverage-istanbul": "^0.32.0",
     "object-hash": "^3.0.0",
     "ts-node": "^10.9.1"
   },
