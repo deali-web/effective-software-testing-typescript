@@ -26,5 +26,9 @@
   "dependencies": {
     "object-hash": "^3.0.0",
     "ts-node": "^10.9.1"
+  },
+  "volta": {
+    "node": "18.16.0",
+    "yarn": "3.6.0-git.20230603.hash-3c8237cb"
   }
 }

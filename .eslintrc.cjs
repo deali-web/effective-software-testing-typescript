@@ -23,7 +23,7 @@ module.exports = {
             node: true
         }
     },
-    plugins: ["@typescript-eslint"],
+    plugins: ["@typescript-eslint", "import"],
     rules: {
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-unused-vars": "error"
