@@ -1,11 +1,11 @@
 export class StringUtils {
-	private static readonly EMPTY_STRING_ARRAY: string[] = [''];
+	private static readonly EMPTY_STRING_ARRAY: string[] = [];
 
 	private static isEmpty = (str: string | Array<unknown>) => str.length === 0;
 
 	static substringBetween(str: string, open: string, close: string) {
-		// param 을 string 으로 타이핑 했으므로 null 체크는 제외했습니다.
-		if (this.isEmpty(str) || this.isEmpty(open) || this.isEmpty(close)) {
+		// str 을 string 으로 타이핑 했으므로 str 애 댜헌 null 체크는 제외했습니다.
+		if (this.isEmpty(open) || this.isEmpty(close)) {
 			return null;
 		}
 
