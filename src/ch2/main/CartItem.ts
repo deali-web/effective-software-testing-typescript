@@ -46,3 +46,41 @@ export class CartItem {
 		});
 	}
 }
+
+export const CartItemFunc = (
+	product: string,
+	quantity: number,
+	unitPrice: number,
+) => {
+	const getProduct = () => product;
+	const getQuantity = () => quantity;
+	const getUnitPrice = () => unitPrice;
+
+	const equals = (item: unknown) => {
+		if (!(item instanceof CartItem)) {
+			return false;
+		}
+
+		return (
+			product === item.getProduct() &&
+			quantity === item.getQuantity() &&
+			unitPrice === item.getUnitPrice()
+		);
+	};
+
+	const hashCode = () => {
+		return hash({
+			product,
+			quantity,
+			unitPrice,
+		});
+	};
+
+	return {
+		getProduct,
+		getQuantity,
+		getUnitPrice,
+		equals,
+		hashCode,
+	};
+};
