@@ -3,15 +3,15 @@ import { Estimate } from '../main/Estimate.ts';
 import { PlanningPoker } from '../main/PlanningPoker.ts';
 
 test('reject empty list', () => {
-	// expect(new PlanningPoker().identifyExtremes([])).toThrowError(
-	// 	'There has to be more than 1 estimate in the list',
-	// );
+	expect(() => new PlanningPoker().identifyExtremes([])).toThrowError(
+		'There has to be more than 1 estimate in the list',
+	);
 });
 
 test('reject single item list', () => {
-	// expect(
-	// 	new PlanningPoker().identifyExtremes([new Estimate('dahye', 10)]),
-	// ).toThrowError('There has to be more than 1 estimate in the list');
+	expect(() =>
+		new PlanningPoker().identifyExtremes([new Estimate('dahye', 10)]),
+	).toThrowError('There has to be more than 1 estimate in the list');
 });
 
 test('two Estimates', () => {
