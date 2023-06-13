@@ -22,7 +22,7 @@ export class NumberUtils {
 			const sum = leftDigit + rightDigit + carry;
 
 			result.unshift(sum % 10);
-			carry = sum / 10;
+			carry = Math.floor(sum / 10);
 		}
 
 		if (carry > 0) {
