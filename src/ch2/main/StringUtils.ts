@@ -48,7 +48,7 @@ export const StringUtilsFunc = () => {
 
 const EMPTY_STRING_ARRAY: string[] = [];
 const isEmpty = (str: string | Array<unknown> | null): str is '' | null =>
-	str?.length === 0;
+	str?.length === 0 || str === null;
 
 StringUtilsFunc.substringBetween = (
 	str: string | null,
