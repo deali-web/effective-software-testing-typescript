@@ -5,7 +5,11 @@ class IllegalArgumentError extends Error {
 }
 
 export class NumberUtils {
-	public add(left: number[], right: number[]) {
+	public add(left: number[] | null, right: number[] | null) {
+		if (left === null || right === null) {
+			return null;
+		}
+
 		left.reverse();
 		right.reverse();
 
@@ -38,7 +42,11 @@ export class NumberUtils {
 }
 
 export const NumberUtilsFunc = () => {
-	const add = (left: number[], right: number[]) => {
+	const add = (left: number[] | null, right: number[] | null) => {
+		if (left === null || right === null) {
+			return null;
+		}
+
 		left.reverse();
 		right.reverse();
 
