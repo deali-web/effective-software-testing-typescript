@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1686640133256" clover="3.2.0">
+  <project timestamp="1686640133256" name="All files">
+    <metrics statements="25" coveredstatements="20" conditionals="18" coveredconditionals="15" methods="8" coveredmethods="5" elements="51" coveredelements="40" complexity="0" loc="25" ncloc="25" packages="1" files="2" classes="2"/>
+    <file name="Estimate.ts" path="/Users/devohda/company/effective-software-testing-typescript/src/ch1/main/Estimate.ts">
+      <metrics statements="13" coveredstatements="10" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="4"/>
+      <line num="5" count="32" type="stmt"/>
+      <line num="6" count="32" type="stmt"/>
+      <line num="8" count="32" type="stmt"/>
+      <line num="9" count="32" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="17" count="108" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="25" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="29" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="33" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="37" count="0" type="stmt"/>
+    </file>
+    <file name="PlanningPoker.ts" path="/Users/devohda/company/effective-software-testing-typescript/src/ch1/main/PlanningPoker.ts">
+      <metrics statements="12" coveredstatements="10" conditionals="12" coveredconditionals="11" methods="2" coveredmethods="1"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="11" count="5" type="cond" truecount="1" falsecount="1"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="19" count="32" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="8" type="stmt"/>
+      <line num="25" count="32" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="8" type="stmt"/>
+      <line num="33" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>
