@@ -38,3 +38,6 @@ dist-ssr
 /.pnp
 .pnp.js
 .pnp.cjs
+
+coverage
+html

@@ -4,7 +4,8 @@ export default defineConfig({
 	test: {
 		globals: true,
 		coverage: {
-			provider: 'istanbul',
+			provider: 'c8',
 		},
+		reporters: ['default', 'html'],
 	},
 });
