@@ -6,7 +6,7 @@ const countWords = () => {
 		let words = 0;
 		let last = ' ';
 		for (let i = 0; i < str.length; i++) {
-			if (isLetter(str.charAt(i)) && (last === 's' || last === 'r')) {
+			if (!isLetter(str.charAt(i)) && (last === 's' || last === 'r')) {
 				words++;
 			}
 			last = str.charAt(i);
