@@ -4,7 +4,8 @@ export default defineConfig({
 	test: {
 		globals: true,
 		coverage: {
-			provider: 'c8',
+			provider: 'v8',
+			exclude: ['.pnp.*'],
 		},
 		reporters: ['default', 'html'],
 	},
