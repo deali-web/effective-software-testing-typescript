@@ -38,3 +38,13 @@ describe('예제 3.7', () => {
 		});
 	});
 });
+
+describe('예제 3.8', () => {
+	test('leftPad', () => {
+		const str = 'sometext';
+
+		const { leftPad } = leftPadUtils();
+
+		expect(leftPad(str, 5, '-')).toBe(str);
+	});
+});
