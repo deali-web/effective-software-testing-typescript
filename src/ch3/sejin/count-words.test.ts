@@ -14,3 +14,11 @@ describe('예제 3.2', () => {
 		expect(words).toBe(0);
 	});
 });
+
+describe('예제 3.3', () => {
+	test('wordsThatEndInR', () => {
+		const words: number = CountWords().count('car bar');
+
+		expect(words).toBe(2);
+	});
+});
