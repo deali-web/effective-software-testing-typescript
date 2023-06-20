@@ -15,10 +15,26 @@ describe('예제 3.6', () => {
 			['abc', 2, '-', 'abc'],
 		];
 
+		const { leftPad } = leftPadUtils();
+
 		testCaseList.forEach(([originalStr, size, padString, expectedStr]) => {
-			expect(leftPadUtils().leftPad(originalStr, size, padString)).toBe(
-				expectedStr,
-			);
+			expect(leftPad(originalStr, size, padString)).toBe(expectedStr);
+		});
+	});
+});
+
+describe('예제 3.7', () => {
+	test('leftPad', () => {
+		const testCaseList = [
+			['abc', 5, '--', '--abc'],
+			['abc', 5, '---', '--abc'],
+			['abc', 5, '-', '--abc'],
+		];
+
+		const { leftPad } = leftPadUtils();
+
+		testCaseList.forEach(([originalStr, size, padString, expectedStr]) => {
+			expect(leftPad(originalStr, size, padString)).toBe(expectedStr);
 		});
 	});
 });
