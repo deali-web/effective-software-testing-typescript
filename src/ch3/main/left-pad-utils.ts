@@ -1,7 +1,7 @@
 const leftPadUtils = () => {
 	const SPACE = ' ';
 	const isEmpty = (str: string) => !str.length;
-	const leftPad = (str: string, size: number, padStr = SPACE) => {
+	const leftPad = (str: string, size: number, padStr: string) => {
 		if (isEmpty(padStr)) padStr = SPACE;
 		const padLen = padStr.length;
 		const strLen = str.length;
